@@ -1,0 +1,4 @@
+"0",""
+"0","# assigns sd to states with just one poll as median of other sd values"
+"0","results <- results %>%"
+"0","    mutate(sd = ifelse(is.na(sd), median(results$sd, na.rm = TRUE), sd))"

@@ -1,0 +1,32 @@
+{
+    "id": "FC1E4432",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1612179995016.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "expression": "polls_us_election_2016",
+        "caption": "polls_us_election_2016",
+        "totalObservations": 4208,
+        "displayedObservations": 4208,
+        "variables": 15,
+        "cacheKey": "15CE0609",
+        "object": "polls_us_election_2016",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=polls_us_election_2016&cache_key=15CE0609&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1611960511,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1612179995016,
+    "read_only": false,
+    "read_only_alternatives": []
+}

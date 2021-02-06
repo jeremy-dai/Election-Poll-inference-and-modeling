@@ -1,0 +1,6 @@
+"0",""
+"0","# joining electoral college votes and results"
+"0","results <- left_join(results, results_us_election_2016, by=""state"")"
+"0",""
+"0","# states with no polls: note Rhode Island and District of Columbia = Democrat"
+"0","results_us_election_2016 %>% filter(!state %in% results$state)"

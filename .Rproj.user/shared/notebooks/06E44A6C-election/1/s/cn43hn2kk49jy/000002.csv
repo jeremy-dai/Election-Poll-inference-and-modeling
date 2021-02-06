@@ -1,0 +1,13 @@
+"0","# Add the actual results to the `cis` data set"
+"0","add <- results_us_election_2016 %>% mutate(actual_spread = clinton/100 - trump/100) %>% select(state, actual_spread)"
+"0","ci_data <- cis %>% mutate(state = as.character(state)) %>% left_join(add, by = ""state"")"
+"0",""
+"0","# Create an object called `p_hits` that summarizes the proportion of confidence intervals that contain the actual value. "
+"0","p_hits <- ci_data %>% mutate(hit = lower <= actual_spread & upper >= actual_spread) %>% "
+"0","  group_by(pollster) %>%"
+"0","  filter(n() >=  5) %>%"
+"0","  summarize(proportion_hits = mean(hit), n = n(), grade = grade[1]) %>%"
+"0","  arrange(desc(proportion_hits))"
+"2","`summarise()` ungrouping output (override with `.groups` argument)
+"
+"0","p_hits"
